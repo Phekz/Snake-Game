@@ -8,7 +8,7 @@ pygame.init()
 # Cores
 white = (255, 255, 255)  # formato rgb
 red = (255, 0, 0)
-black = (8, 95.2, 6.4)  # Correção na definição da cor preta
+green = (8, 95.2, 6.4)  # Correção na definição da cor verde
 
 # Criando janela
 screen_width = 900
@@ -115,7 +115,7 @@ def gameloop():
             elif snake_y < 50:
                 snake_y = screen_height - snake_size
 
-            plot_snake(gameWindow, black, snk_list, snake_size)
+            plot_snake(gameWindow, green, snk_list, snake_size)
         pygame.display.update()
         clock.tick(fps)
     pygame.quit()
